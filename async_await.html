@@ -1,0 +1,16 @@
+<script>
+  console.log("async await start");
+  const func1 = async () => {
+    const promise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("resolving first await function");
+      }, 2000);
+    });
+    // return await "as";
+    return promise;
+  }
+  func1().then(a => {
+    console.log(a);
+  });
+
+</script>
