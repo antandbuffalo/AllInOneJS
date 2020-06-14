@@ -1,5 +1,6 @@
+var greetings = require('./greetings.json');
 var tamil = () => {
-    console.log("Vanakkam..");
+    console.log(greetings.ta);
 }
 
 module.exports = tamil;
