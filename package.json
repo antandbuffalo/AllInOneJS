@@ -1,0 +1,23 @@
+{
+  "name": "allinonejs",
+  "version": "1.0.0",
+  "description": "all js examples that i try",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antandbuffalo/AllInOneJS.git"
+  },
+  "author": "jeyabalaji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antandbuffalo/AllInOneJS/issues"
+  },
+  "homepage": "https://github.com/antandbuffalo/AllInOneJS#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
