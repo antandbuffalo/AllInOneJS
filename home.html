@@ -10,3 +10,15 @@
 
     </body>
 </html>
+
+<script>
+    (function() {
+        console.log('IIF');
+        let names = ['jeya', 'balaji'];
+        let names2 = {...names};
+        function print(name1, name2) {
+            console.log('names', name1, name2);
+        }
+        print(...names);
+    })();
+</script>
