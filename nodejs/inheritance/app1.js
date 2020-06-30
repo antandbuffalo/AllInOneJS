@@ -12,6 +12,10 @@ Student.prototype.fullname = function() {
 }
 
 function Employee() {
+    // this is same as calling super() in other programming languages.
+    // this will append all the properties and methods of parent to the child
+    Student.call(this);
+    // Student.apply(this);
     this.firstname = 'something';
 }
 
