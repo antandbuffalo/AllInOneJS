@@ -11,3 +11,19 @@ we can just add parameters and methods in it
 
 - always use module.exports thats better. forget about exports
 
+- callbacks exist in other languages also. like c++. it has the library libuv
+
+- NodeJS is async. that means v8 engine in node can run in parallel while
+the core c++ lib was doing something else. It is same like, JS in sync but
+the browser is async. Browser can do multiple things in parallel but JS do one at a time
+
+- Stream: a sequence of data available over time. Sequence of data moving over time
+
+Buffer and Stream: When data streamed, it is buffered and then processed. It continues in
+a stream. Eg: Streaming a movie
+
+Characters eg: hello
+Character set: Unicode or ASCII code - What number, each character is represented by.
+we assign each character, letters and symbols a number
+Character encoding: UTF-8 (8 bits are used to store one character). How many bits we are
+using to store that number (from character set)
