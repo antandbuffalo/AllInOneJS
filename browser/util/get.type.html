@@ -1,0 +1,22 @@
+<script>
+    const types = [
+        "ant and buffalo",
+        {},
+        false,
+        49,
+        [],
+        NaN,
+        38.8
+    ];
+
+    function getType(input) {
+        // console.log(input.toString());
+        // console.log(Object.prototype.toString.call(input));
+        const output = Object.prototype.toString.call(input);
+        let parsed = output.split(" ")[1];
+        return parsed.substring(0, parsed.length - 1).toLowerCase();
+    }
+    types.forEach((item) => {
+        console.log(`${item} : ${getType(item)}`);
+    });
+</script>
