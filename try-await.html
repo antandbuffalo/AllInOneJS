@@ -1,0 +1,17 @@
+<body>
+    Await is running the code in sync but it wont block the event loop <br><br>
+    Some text here <br><br>
+    <button>Try clicking this button</button>
+</body>
+<script>
+    function timingFunction(x, time) {
+        setTimeout(function(x) {
+            console.log(`timer expired ${x}`);
+        }, time, x);
+    }
+    async function tryAwait() {
+        await timingFunction(1, 3000);
+        await timingFunction(2, 5000);
+    }
+    tryAwait();
+</script>
