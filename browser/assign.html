@@ -1,0 +1,12 @@
+<script>
+  let s1 = {
+    name: "student1",
+    id: 1
+  }
+  let s2 = Object.assign({}, s1);
+  s2.key = s2.id;
+  console.log("s2", s2);
+
+  let s3 = {...s1, key: s1.id};
+  console.log("s3", s3);
+</script>

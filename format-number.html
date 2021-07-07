@@ -1,0 +1,13 @@
+<script>
+    function toLocaleNumber(x) {
+        return x.toLocaleString("ID");
+    }
+    console.log(toLocaleNumber(12121.121));
+
+    function parsing() {
+        let request = "{}";
+        request = JSON.parse(request);
+        console.log({...request, val: 23});
+    }
+    parsing();
+</script>
